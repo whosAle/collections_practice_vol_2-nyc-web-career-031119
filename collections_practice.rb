@@ -33,10 +33,6 @@ def count_elements(array)
 end
 
 def merge_data(data1, data2)
-  result = []
-  d2_keys = []
-  data2.each {|hash| d2_keys << hash.keys }
-  puts d2_keys
 
   data1.each do |hash|
     data2.each do |hash2|
