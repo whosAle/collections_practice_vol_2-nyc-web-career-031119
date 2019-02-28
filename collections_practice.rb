@@ -25,24 +25,13 @@ def count_elements(array)
         count[val] = 1
       end
     end
-    # if !count[hash[:name]]
-    #   count[hash[:name]] = 1
-    # else
-    #   count[hash[:name]] += 1
-    # end
-
-
-    # hash.each do |key, name|
-    #   if count[key][name]
-    #     count[key][:count] += 1
-    #   else
-    #     count[key] = name
-    #     count[key][:count] = 1
-    #   end
-    # end
   end
-  puts count
-  #1array.count { |e| }
+
+  result = []
+  count.each { |name, count| result << {name: name, count: count} }
+
+  result
+
 end
 
 def merge_data(data1, data2)
