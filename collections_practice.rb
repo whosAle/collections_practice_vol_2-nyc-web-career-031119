@@ -33,16 +33,21 @@ def count_elements(array)
 end
 
 def merge_data(data1, data2)
+  result = []
   d2_keys = []
   data2.each {|hash| d2_keys << hash.keys }
   puts d2_keys
   # data1.merge(data2)
   #
-  # data1.each do |key, value|
-  #   if value[]
-  #
-  #   end
-  # end
+  temp ={}
+  data1.each {|hash| temp = hash.col }
+
+  data2.each do |hash|
+    hash.each do |name, info|
+      puts name
+    end
+  end
+  puts temp
 end
 
 def find_cool(array)
