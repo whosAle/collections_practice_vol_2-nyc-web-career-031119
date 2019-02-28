@@ -50,5 +50,5 @@ def organize_schools(hash)
     result.key?(loc[:location]) ? result[loc[:location]] << school : result[loc[:location]] = [school]
   end
 
-  result
+  # result
 end
