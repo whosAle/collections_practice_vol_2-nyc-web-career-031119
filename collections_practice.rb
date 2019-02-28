@@ -15,17 +15,21 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  count = {}
+  count = []
   array.each do |hash|
     puts hash
-    hash.each do |key, name|
-      if count[key][name]
-        count[key][:count] += 1
-      else
-        count[key] = name
-        count[key][:count] = 1
-      end
-    end
+    if count[hash[:name]]
+      count[hash[:name]] += 1
+    else
+      count[hash[:name]] = 1
+    # hash.each do |key, name|
+    #   if count[key][name]
+    #     count[key][:count] += 1
+    #   else
+    #     count[key] = name
+    #     count[key][:count] = 1
+    #   end
+    # end
   end
   puts count
   #1array.count { |e| }
