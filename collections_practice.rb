@@ -22,6 +22,7 @@ def count_elements(array)
       count[hash[:name]] += 1
     else
       count[hash[:name]] = 1
+    end
     # hash.each do |key, name|
     #   if count[key][name]
     #     count[key][:count] += 1
