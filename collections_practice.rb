@@ -40,5 +40,5 @@ def find_cool(array)
   result = []
 
   array.collect { |hash| hash if hash[:temperature] == "cool"  }
-  
+
 end
