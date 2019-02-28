@@ -42,7 +42,7 @@ def merge_data(data1, data2)
     data2.each do |hash2|
       hash2.each do |name, info|
         if name == hash[:first_name]
-          result << hash.merge (info)
+          result << hash.merge(info)
         end
       end
     end
