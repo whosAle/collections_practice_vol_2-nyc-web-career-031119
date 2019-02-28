@@ -48,7 +48,7 @@ def merge_data(data1, data2)
         end
       end
     end
-  end 
+  end
 
   data2.each do |hash|
     hash.each do |name, info|
