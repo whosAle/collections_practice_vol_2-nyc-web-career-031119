@@ -40,7 +40,7 @@ def merge_data(data1, data2)
   # data1.merge(data2)
   #
   temp ={}
-  data1.each {|hash| temp = hash.col }
+  data1.each {|hash| temp = hash.each }
 
   data2.each do |hash|
     hash.each do |name, info|
