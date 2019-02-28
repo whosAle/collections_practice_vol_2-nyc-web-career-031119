@@ -26,7 +26,7 @@ def count_elements(array)
       end
     end
   end
-  count
+  puts count
   #1array.count { |e| }
 end
 
