@@ -35,7 +35,7 @@ end
 def merge_data(data1, data2)
   d2_keys = []
   data2.each {|hash| d2_keys << hash.key(:last_name) }
-  puts data2.keys
+  puts d2_keys
   # data1.merge(data2)
   #
   # data1.each do |key, value|
