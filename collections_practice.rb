@@ -17,7 +17,7 @@ end
 def count_elements(array)
   count = {}
   array.each do |hash|
-    hash.each_char do |key, name|
+    hash.each do |key, name|
       if count[key][name]
         count[name] += 1
       else
