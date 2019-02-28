@@ -35,3 +35,7 @@ end
 def merge_data(data1, data2)
   data1.merge(data2)
 end
+
+def find_cool
+
+end
