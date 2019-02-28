@@ -33,7 +33,14 @@ def count_elements(array)
 end
 
 def merge_data(data1, data2)
-  data1.merge(data2)
+  puts data2.values
+  # data1.merge(data2)
+  #
+  # data1.each do |key, value|
+  #   if value[]
+  #
+  #   end
+  # end
 end
 
 def find_cool(array)
