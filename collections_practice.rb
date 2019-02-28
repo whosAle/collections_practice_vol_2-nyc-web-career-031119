@@ -14,14 +14,16 @@ def remove_non_strings(array)
   array.delete_if { |e| !(e.is_a? String)  }
 end
 
-def count_elements(hash)
+def count_elements(array)
   count = {}
-  hash.each do |key, name|
-    if count[key][name]
-      count[name] += 1
-    else
-      count[key] = name
-      count[name][:count] = 1
+  array.each do |hash|
+    hash.each_char do |key, name|
+      if count[key][name]
+        count[name] += 1
+      else
+        count[key] = name
+        count[name][:count] = 1
+      end
     end
   end
   count
