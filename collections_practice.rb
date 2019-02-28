@@ -23,6 +23,7 @@ def count_elements(array)
         count[val] +=1
       else
         count[val] = 1
+      end
     end
     # if !count[hash[:name]]
     #   count[hash[:name]] = 1
