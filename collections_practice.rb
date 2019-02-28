@@ -16,16 +16,16 @@ end
 
 def count_elements(array)
   count = {}
-  array.each do |hash|
-    hash.each do |key, name|
-      if count[key][name]
-        count[name] += 1
-      else
-        count[key] = name
-        count[name][:count] = 1
-      end
-    end
-  end
+  # array.each do |hash|
+  #   hash.each do |key, name|
+  #     if count[key][name]
+  #       count[name] += 1
+  #     else
+  #       count[key] = name
+  #       count[name][:count] = 1
+  #     end
+  #   end
+  # end
   puts count
   #1array.count { |e| }
 end
