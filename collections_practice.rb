@@ -37,9 +37,7 @@ def merge_data(data1, data2)
   d2_keys = []
   data2.each {|hash| d2_keys << hash.keys }
   puts d2_keys
-  # data1.merge(data2)
-  #
-  temp ={}
+
   data1.each do |hash|
     data2.each do |hash2|
       hash2.each do |name, info|
@@ -50,12 +48,8 @@ def merge_data(data1, data2)
     end
   end
 
-  data2.each do |hash|
-    hash.each do |name, info|
-      puts name
-    end
-  end
-  puts temp
+  result
+
 end
 
 def find_cool(array)
