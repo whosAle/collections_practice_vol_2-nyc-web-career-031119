@@ -42,3 +42,9 @@ def find_cool(array)
   array.each { |hash| result << hash if hash[:temperature] == "cool"  }
   result
 end
+
+def organize_schools(hash)
+  result = Hash.new
+
+  hash.invert
+end
