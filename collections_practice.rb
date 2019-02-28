@@ -46,5 +46,9 @@ end
 def organize_schools(hash)
   result = Hash.new
 
-  hash.invert
+  hash.each do |school, loc|
+    result.key?(loc[:location]) ? result[loc[:location]] << school : result[loc[:location]] = [school]
+  end
+
+  result
 end
