@@ -20,10 +20,10 @@ def count_elements(array)
     puts hash
     hash.each do |key, name|
       if count[key][name]
-        count[key][name][:count] += 1
+        count[key]:count] += 1
       else
         count[key] = name
-        count[name][:count] = 1
+        count[key][:count] = 1
       end
     end
   end
