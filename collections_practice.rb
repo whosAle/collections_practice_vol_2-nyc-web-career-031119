@@ -25,7 +25,6 @@ def count_elements(array)
       end
     end
   end
-
   result = []
   count.each { |name, count| result << {name: name, count: count} }
 
