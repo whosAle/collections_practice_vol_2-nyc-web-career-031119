@@ -15,7 +15,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  count = []
+  count = {}
   array.each do |hash|
     puts hash
     hash.each do |key, val|
